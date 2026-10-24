@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>গোপনীয়তা নীতিমালা | Privacy Policy – মৌজা ম্যাপ বাংলাদেশ</title>
+<meta name="description" content="মৌজা ম্যাপ বাংলাদেশ (com.mouzamap) অ্যাপের গোপনীয়তা নীতিমালা। Privacy Policy of the Mouza Map Bangladesh Android app.">
+<meta name="theme-color" content="#14532D">
+<meta property="og:title" content="Privacy Policy – Mouza Map Bangladesh">
+<meta property="og:description" content="How Mouza Map Bangladesh (মৌজা ম্যাপ বাংলাদেশ) collects, uses and protects your information.">
+<meta property="og:type" content="website">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FFF8E7; --cream-deep:#FFF0CC; --paper:#FFFFFF;
+  --line:#EFDFA8; --line-soft:#F6EBC3;
+  --ink:#17221A; --ink-soft:#5C625C; --ink-muted:#8A8F85;
+  --forest:#14532D; --forest-deep:#0C3A1F; --map:#299653; --mint:#EFF9F3;
+  --gold:#D9A21B; --warn-bg:#FEF3C7; --warn:#B45309;
+  --shadow:0 1px 2px rgba(20,83,45,.06),0 10px 30px -12px rgba(20,83,45,.18);
+  --radius:20px;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --cream:#0E1710; --cream-deep:#14201A; --paper:#16221A;
+    --line:#2A3A2E; --line-soft:#223027;
+    --ink:#EAF1E6; --ink-soft:#B4C0B3; --ink-muted:#8A9889;
+    --forest:#6FD39A; --forest-deep:#0A130D; --map:#4FBF7F; --mint:#15271C;
+    --gold:#E8B84A; --warn-bg:#2B2410; --warn:#F3C569;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px -12px rgba(0,0,0,.6);
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{
+  margin:0;font-family:'Hind Siliguri','Noto Sans Bengali','Segoe UI',system-ui,-apple-system,sans-serif;
+  color:var(--ink);background:var(--cream);line-height:1.75;font-size:16.5px;
+  -webkit-font-smoothing:antialiased;
+}
+html[lang="bn"] .en{display:none !important}
+html[lang="en"] .bn{display:none !important}
+a{color:var(--forest);text-underline-offset:3px}
+a:hover{color:var(--map)}
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;overflow:hidden;color:#fff;
+  background:
+    radial-gradient(1200px 500px at 85% -10%,rgba(41,150,83,.55),transparent 60%),
+    radial-gradient(800px 400px at 0% 110%,rgba(217,162,27,.28),transparent 60%),
+    linear-gradient(135deg,#0C3A1F 0%,#14532D 55%,#1B6B3B 100%);
+  padding:28px 20px 96px;
+}
+.hero::before{ /* cadastral survey grid */
+  content:"";position:absolute;inset:0;opacity:.14;
+  background-image:
+    linear-gradient(rgba(255,255,255,.7) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.7) 1px,transparent 1px);
+  background-size:44px 44px;
+  -webkit-mask-image:radial-gradient(ellipse at 70% 30%,#000 0%,transparent 70%);
+          mask-image:radial-gradient(ellipse at 70% 30%,#000 0%,transparent 70%);
+}
+.hero svg.contours{position:absolute;right:-120px;top:-60px;width:620px;opacity:.16;pointer-events:none}
+.topbar{position:relative;max-width:1120px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;letter-spacing:.2px}
+.brand img{width:38px;height:38px;border-radius:11px;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+.lang{display:inline-flex;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:4px;backdrop-filter:blur(8px)}
+.lang button{
+  font:inherit;font-size:14px;font-weight:600;border:0;background:transparent;color:#fff;
+  padding:6px 16px;border-radius:999px;cursor:pointer;transition:.2s
+}
+.lang button[aria-pressed="true"]{background:#fff;color:var(--forest-deep);box-shadow:0 2px 8px rgba(0,0,0,.2)}
+.lang button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.hero-inner{position:relative;max-width:1120px;margin:56px auto 0;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center}
+.hero-logo{width:132px;height:132px;border-radius:32px;box-shadow:0 18px 50px rgba(0,0,0,.4),0 0 0 6px rgba(255,255,255,.12)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#CFEFDB;margin-bottom:6px}
+.eyebrow i{width:26px;height:2px;background:var(--gold);display:inline-block;border-radius:2px}
+.hero h1{margin:0;font-size:clamp(30px,5vw,50px);line-height:1.2;font-weight:700}
+.hero p.sub{margin:10px 0 18px;color:#D8EFE1;max-width:640px;font-size:18px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);padding:6px 14px;border-radius:999px;font-size:14px}
+.chip svg{width:16px;height:16px}
+
+/* ---------- Layout ---------- */
+.wrap{max-width:1120px;margin:-56px auto 0;padding:0 20px 60px;position:relative;display:grid;grid-template-columns:260px 1fr;gap:32px;align-items:start}
+nav.toc{position:sticky;top:20px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:14px;box-shadow:var(--shadow);max-height:calc(100vh - 40px);overflow:auto}
+nav.toc h2{margin:6px 10px 10px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-muted)}
+nav.toc a{display:flex;gap:10px;align-items:center;padding:8px 10px;border-radius:12px;color:var(--ink-soft);text-decoration:none;font-size:15px;transition:.18s}
+nav.toc a b{display:inline-grid;place-items:center;min-width:24px;height:24px;border-radius:8px;background:var(--mint);color:var(--forest);font-size:12px;font-weight:700}
+nav.toc a:hover{background:var(--mint);color:var(--ink)}
+nav.toc a.active{background:var(--forest);color:#fff}
+nav.toc a.active b{background:rgba(255,255,255,.2);color:#fff}
+@media (prefers-color-scheme: dark){nav.toc a.active{color:#07140C}nav.toc a.active b{background:rgba(0,0,0,.18);color:#07140C}}
+
+main{min-width:0}
+.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:26px}
+.g-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px 16px;box-shadow:var(--shadow)}
+.g-card .ic{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:var(--mint);color:var(--forest);margin-bottom:10px}
+.g-card .ic svg{width:24px;height:24px}
+.g-card h3{margin:0 0 4px;font-size:16px;line-height:1.35}
+.g-card p{margin:0;color:var(--ink-soft);font-size:14px;line-height:1.55}
+
+section.card{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  padding:28px 30px;margin-bottom:22px;box-shadow:var(--shadow);position:relative;
+}
+section.card>.num{
+  position:absolute;top:22px;right:26px;font-size:54px;font-weight:700;line-height:1;color:var(--line);opacity:.8;user-select:none
+}
+section.card h2{margin:0 0 14px;font-size:24px;line-height:1.3;color:var(--forest);display:flex;align-items:center;gap:12px;padding-right:56px}
+section.card h2 .ic{flex:none;width:40px;height:40px;border-radius:12px;background:var(--mint);display:grid;place-items:center}
+section.card h2 .ic svg{width:22px;height:22px}
+section.card h3{margin:22px 0 6px;font-size:17px;color:var(--ink)}
+section.card p{margin:0 0 12px;color:var(--ink-soft)}
+section.card ul{margin:0 0 12px;padding:0;list-style:none}
+section.card li{position:relative;padding-left:26px;margin:7px 0;color:var(--ink-soft)}
+section.card li::before{content:"";position:absolute;left:4px;top:.62em;width:9px;height:9px;border-radius:3px;background:var(--map);transform:rotate(45deg)}
+section.card li strong,section.card p strong{color:var(--ink)}
+.no li::before{background:var(--gold)}
+
+.callout{display:flex;gap:14px;padding:16px 18px;border-radius:16px;background:var(--mint);border:1px solid var(--line);margin:14px 0 4px}
+.callout svg{flex:none;width:24px;height:24px;color:var(--forest);margin-top:2px}
+.callout p{margin:0}
+.callout.warn{background:var(--warn-bg);border-color:var(--line)}
+.callout.warn svg{color:var(--warn)}
+
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:16px;margin:12px 0}
+table{border-collapse:collapse;width:100%;min-width:620px;font-size:15px}
+th{background:var(--mint);color:var(--forest);text-align:left;font-weight:600;padding:12px 14px;white-space:nowrap}
+td{padding:12px 14px;border-top:1px solid var(--line-soft);vertical-align:top;color:var(--ink-soft)}
+td:first-child{color:var(--ink);font-weight:500}
+
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}
+.btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;padding:12px 20px;border-radius:14px;transition:.18s;border:1px solid transparent}
+.btn.primary{background:var(--forest);color:#fff}
+.btn.primary:hover{background:var(--forest-deep);color:#fff;transform:translateY(-1px)}
+.btn.ghost{border-color:var(--line);color:var(--forest);background:var(--paper)}
+.btn.ghost:hover{background:var(--mint)}
+.btn svg{width:18px;height:18px}
+@media (prefers-color-scheme: dark){.btn.primary{color:#07140C}.btn.primary:hover{color:#07140C;background:var(--map)}}
+
+footer{background:var(--forest-deep);color:#BFD9C8;padding:36px 20px;text-align:center;font-size:14.5px}
+footer a{color:#fff}
+footer .fl{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-bottom:10px}
+
+/* reveal animation */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width:980px){
+  .wrap{grid-template-columns:1fr;margin-top:-48px}
+  nav.toc{position:sticky;top:0;z-index:20;display:flex;gap:6px;overflow-x:auto;padding:8px;border-radius:16px;max-height:none;-webkit-overflow-scrolling:touch}
+  nav.toc h2{display:none}
+  nav.toc a{flex:none;white-space:nowrap;padding:7px 12px}
+  nav.toc a span{display:none}
+  nav.toc a.active span{display:inline}
+  .glance{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .hero{padding-bottom:84px}
+  .hero-inner{grid-template-columns:1fr;margin-top:36px;text-align:left}
+  .hero-logo{width:96px;height:96px;border-radius:26px}
+  section.card{padding:22px 18px}
+  section.card h2{font-size:21px}
+  section.card>.num{font-size:40px;right:16px}
+  .glance{grid-template-columns:1fr}
+}
+@media print{
+  .hero{background:#fff;color:#000;padding:10px 0}.hero::before,.hero svg.contours,.lang,nav.toc{display:none}
+  .wrap{display:block;margin:0}.reveal{opacity:1;transform:none}
+  section.card,.g-card{box-shadow:none;break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+  <svg class="contours" viewBox="0 0 600 600" fill="none" stroke="#fff" stroke-width="1.4" aria-hidden="true">
+    <path d="M60 300c0-130 110-240 240-240s240 110 240 240-110 240-240 240S60 430 60 300z"/>
+    <path d="M110 300c0-102 88-190 190-190s190 88 190 190-88 190-190 190-190-88-190-190z"/>
+    <path d="M160 300c0-74 66-140 140-140s140 66 140 140-66 140-140 140-140-66-140-140z"/>
+    <path d="M210 300c0-46 44-90 90-90s90 44 90 90-44 90-90 90-90-44-90-90z"/>
+    <path d="M255 300c0-22 23-45 45-45s45 23 45 45-23 45-45 45-45-23-45-45z"/>
+  </svg>
+
+  <div class="topbar">
+    <div class="brand"><img src="logo.png" alt="" width="38" height="38"><span class="bn">মৌজা ম্যাপ বাংলাদেশ</span><span class="en">Mouza Map Bangladesh</span></div>
+    <div class="lang" role="group" aria-label="Language / ভাষা">
+      <button type="button" data-set="bn" aria-pressed="true">বাংলা</button>
+      <button type="button" data-set="en" aria-pressed="false">English</button>
+    </div>
+  </div>
+
+  <div class="hero-inner">
+    <img class="hero-logo" src="logo.png" alt="Mouza Map Bangladesh app icon" width="132" height="132">
+    <div>
+      <div class="eyebrow"><i></i><span class="bn">আইনি তথ্য</span><span class="en">Legal</span></div>
+      <h1><span class="bn">গোপনীয়তা নীতিমালা</span><span class="en">Privacy Policy</span></h1>
+      <p class="sub">
+        <span class="bn">আপনার তথ্য আমরা কী কী সংগ্রহ করি, কেন করি এবং কীভাবে সুরক্ষিত রাখি — সহজ ভাষায়।</span>
+        <span class="en">What information we collect, why we collect it, and how we keep it safe — in plain language.</span>
+      </p>
+      <div class="chips">
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
+          <span class="bn">সর্বশেষ হালনাগাদ: ২৪ অক্টোবর ২০২৬</span><span class="en">Last updated: 24 October 2026</span></span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Android · com.mouzamap</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== BODY ===================== -->
+<div class="wrap">
+
+  <nav class="toc" aria-label="Table of contents">
+    <h2><span class="bn">সূচিপত্র</span><span class="en">Contents</span></h2>
+    <a href="#s1"><b>১</b><span class="bn">ভূমিকা</span><span class="en">Introduction</span></a>
+    <a href="#s2"><b>২</b><span class="bn">যে তথ্য সংগ্রহ করি</span><span class="en">Information we collect</span></a>
+    <a href="#s3"><b>৩</b><span class="bn">তথ্য ব্যবহারের উদ্দেশ্য</span><span class="en">How we use it</span></a>
+    <a href="#s4"><b>৪</b><span class="bn">তৃতীয় পক্ষের সেবা</span><span class="en">Third-party services</span></a>
+    <a href="#s5"><b>৫</b><span class="bn">বিজ্ঞাপন ও সম্মতি</span><span class="en">Ads &amp; consent</span></a>
+    <a href="#s6"><b>৬</b><span class="bn">তথ্য শেয়ারিং</span><span class="en">Sharing</span></a>
+    <a href="#s7"><b>৭</b><span class="bn">নিরাপত্তা</span><span class="en">Security</span></a>
+    <a href="#s8"><b>৮</b><span class="bn">সংরক্ষণ ও মুছে ফেলা</span><span class="en">Retention &amp; deletion</span></a>
+    <a href="#s9"><b>৯</b><span class="bn">আপনার অধিকার</span><span class="en">Your choices</span></a>
+    <a href="#s10"><b>১০</b><span class="bn">শিশুদের গোপনীয়তা</span><span class="en">Children</span></a>
+    <a href="#s11"><b>১১</b><span class="bn">নীতিমালা পরিবর্তন</span><span class="en">Changes</span></a>
+    <a href="#s12"><b>১২</b><span class="bn">যোগাযোগ</span><span class="en">Contact</span></a>
+  </nav>
+
+  <main>
+
+    <!-- At a glance -->
+    <div class="glance reveal">
+      <div class="g-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.3-7-11a7 7 0 0114 0c0 5.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/><path d="M4 4l16 16"/></svg></div>
+        <h3><span class="bn">লোকেশন ট্র্যাকিং নেই</span><span class="en">No location tracking</span></h3>
+        <p><span class="bn">অ্যাপ আপনার ডিভাইসের লোকেশন, ক্যামেরা, মাইক্রোফোন বা কন্টাক্ট অ্যাক্সেস চায় না।</span><span class="en">The app doesn’t ask for your device location, camera, microphone or contacts.</span></p>
+      </div>
+      <div class="g-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg></div>
+        <h3><span class="bn">তথ্য বিক্রি করি না</span><span class="en">We don’t sell your data</span></h3>
+        <p><span class="bn">আপনার ব্যক্তিগত তথ্য আমরা কারও কাছে বিক্রি করি না।</span><span class="en">We never sell your personal information.</span></p>
+      </div>
+      <div class="g-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="3"/><path d="M7 11V8a5 5 0 0110 0v3"/></svg></div>
+        <h3><span class="bn">সুরক্ষিত অ্যাকাউন্ট</span><span class="en">Secure sign-in</span></h3>
+        <p><span class="bn">Firebase Authentication দিয়ে লগইন এবং ডিভাইসে এনক্রিপ্টেড সেশন।</span><span class="en">Firebase Authentication sign-in and an encrypted session on your device.</span></p>
+      </div>
+      <div class="g-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14M10 10v6M14 10v6"/></svg></div>
+        <h3><span class="bn">যেকোনো সময় মুছুন</span><span class="en">Delete anytime</span></h3>
+        <p><span class="bn">অ্যাপের সেটিংস থেকেই অ্যাকাউন্ট স্থায়ীভাবে মুছে ফেলা যায়।</span><span class="en">Permanently delete your account right from the app’s Settings.</span></p>
+      </div>
+    </div>
+
+    <!-- 1 -->
+    <section class="card reveal" id="s1">
+      <span class="num">০১</span>
+      <h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v5h1"/></svg></span>
+        <span class="bn">ভূমিকা</span><span class="en">Introduction</span></h2>
+      <div class="bn">
+        <p>“মৌজা ম্যাপ বাংলাদেশ” (প্যাকেজ: <strong>com.mouzamap</strong>) একটি অ্যান্ড্রয়েড অ্যাপ, যার মাধ্যমে আপনি বিভাগ, জেলা, উপজেলা ও মৌজা ব্রাউজ ও অনুসন্ধান করতে, মৌজা ম্যাপ দেখতে, অফলাইনে সংরক্ষণ করতে এবং ম্যাপের জন্য আবেদন করতে পারেন।</p>
+        <p>এই নীতিমালায় ব্যাখ্যা করা হয়েছে অ্যাপটি ব্যবহারের সময় কোন তথ্য সংগ্রহ ও প্রক্রিয়া করা হয়, কেন করা হয় এবং এ বিষয়ে আপনার কী কী নিয়ন্ত্রণ আছে। অ্যাপটি ব্যবহার করলে আপনি এই নীতিমালার শর্তাবলিতে সম্মত হচ্ছেন বলে গণ্য হবে।</p>
+      </div>
+      <div class="en">
+        <p>“Mouza Map Bangladesh” (package: <strong>com.mouzamap</strong>) is an Android app that lets you browse and search divisions, districts, upazilas and mouzas, view mouza maps, save them offline, and submit applications for maps.</p>
+        <p>This policy explains what information is collected and processed when you use the app, why, and what control you have. By using the app you agree to the practices described here.</p>
+      </div>
+    </section>
+
+    <!-- 2 -->
+    <section class="card reveal" id="s2">
+      <span class="num">০২</span>
+      <h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span>
+        <span class="bn">আমরা যে তথ্য সংগ্রহ করি</span><span class="en">Information we collect</span></h2>
+
+      <p><span class="bn">অ্যাপের বেশিরভাগ ব্রাউজিং (বিভাগ, জেলা, উপজেলা, মৌজা তালিকা) অ্যাকাউন্ট ছাড়াই করা যায়। আপনি অ্যাকাউন্ট খুললে বা ম্যাপের জন্য আবেদন করলে নিচের তথ্য প্রক্রিয়া করা হয়:</span>
+         <span class="en">Most browsing (divisions, districts, upazilas, mouza lists) works without an account. If you create an account or apply for a map, the following is processed:</span></p>
+
+      <div class="tbl"><table>
+        <thead><tr>
+          <th><span class="bn">তথ্য</span><span class="en">Data</span></th>
+          <th><span class="bn">কেন প্রয়োজন</span><span class="en">Why</span></th>
+          <th><span class="bn">কোথায় থাকে</span><span class="en">Where it lives</span></th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><span class="bn">নাম, মোবাইল নম্বর, ইমেইল</span><span class="en">Name, mobile number, email</span></td>
+            <td><span class="bn">অ্যাকাউন্ট তৈরি, আপনার পরিচয় ও আবেদনের যোগাযোগ</span><span class="en">Account creation, identifying you and contacting you about applications</span></td>
+            <td>Firebase Authentication, Supabase</td>
+          </tr>
+          <tr>
+            <td><span class="bn">পাসওয়ার্ড (ইমেইল দিয়ে নিবন্ধনে)</span><span class="en">Password (email sign-up)</span></td>
+            <td><span class="bn">লগইন ও পাসওয়ার্ড রিসেট</span><span class="en">Sign-in and password reset</span></td>
+            <td><span class="bn">Firebase Authentication পরিচালনা করে</span><span class="en">Handled by Firebase Authentication</span></td>
+          </tr>
+          <tr>
+            <td><span class="bn">Google সাইন-ইন তথ্য</span><span class="en">Google Sign-In details</span></td>
+            <td><span class="bn">আপনি Google দিয়ে লগইন বেছে নিলে পরিচয় যাচাই</span><span class="en">Verifying your identity if you choose to sign in with Google</span></td>
+            <td>Google, Firebase Authentication</td>
+          </tr>
+          <tr>
+            <td><span class="bn">আবেদনের তথ্য: আবেদনকারীর নাম, ফোন, ইমেইল, বিভাগ/জেলা/উপজেলা/মৌজা, জেএল নং, শিট নং, জরিপের ধরন, উদ্দেশ্য ও নোট</span><span class="en">Application details: applicant name, phone, email, division/district/upazila/mouza, JL number, sheet number, survey type, purpose and note</span></td>
+            <td><span class="bn">ম্যাপের আবেদন যাচাই, অনুমোদন বা প্রত্যাখ্যান</span><span class="en">Reviewing, approving or rejecting your map application</span></td>
+            <td>Supabase</td>
+          </tr>
+          <tr>
+            <td><span class="bn">আবেদনের অবস্থা, অডিট ইভেন্ট ও অ্যাপ-ভিতরের নোটিফিকেশন</span><span class="en">Application status, audit events and in-app notifications</span></td>
+            <td><span class="bn">আবেদনের অগ্রগতি জানানো এবং কার্যক্রমের নিরীক্ষণযোগ্য রেকর্ড</span><span class="en">Keeping you informed and keeping an auditable record of actions</span></td>
+            <td>Supabase</td>
+          </tr>
+          <tr>
+            <td><span class="bn">পছন্দের (ফেভারিট) মৌজা তালিকা</span><span class="en">Your favourite mouzas</span></td>
+            <td><span class="bn">আপনার সংরক্ষিত তালিকা দেখানো</span><span class="en">Showing your saved list</span></td>
+            <td>Supabase</td>
+          </tr>
+          <tr>
+            <td><span class="bn">অফলাইন ম্যাপ/PDF, সেটিংস, এনক্রিপ্টেড লগইন সেশন</span><span class="en">Offline maps/PDFs, settings, encrypted sign-in session</span></td>
+            <td><span class="bn">অফলাইনে ব্যবহার ও বারবার লগইন এড়ানো</span><span class="en">Offline use and staying signed in</span></td>
+            <td><span class="bn">শুধু আপনার ডিভাইসে</span><span class="en">On your device only</span></td>
+          </tr>
+          <tr>
+            <td><span class="bn">বিজ্ঞাপন সংক্রান্ত ডেটা (বিজ্ঞাপন আইডি, ডিভাইস ও ব্যবহার তথ্য)</span><span class="en">Advertising data (advertising ID, device and usage information)</span></td>
+            <td><span class="bn">বিজ্ঞাপন দেখানো ও পরিমাপ — ধারা ৫ দেখুন</span><span class="en">Serving and measuring ads — see Section 5</span></td>
+            <td>Google AdMob</td>
+          </tr>
+        </tbody>
+      </table></div>
+
+      <h3><span class="bn">যা আমরা চাই না</span><span class="en">What we do not ask for</span></h3>
+      <ul class="no">
+        <li><span class="bn">অ্যাপ <strong>লোকেশন (GPS), ক্যামেরা, মাইক্রোফোন, কন্টাক্ট বা ফটো</strong> অ্যাক্সেসের অনুমতি চায় না। এলাকা বাছাই হয় তালিকা থেকে (বিভাগ → জেলা → উপজেলা)।</span>
+            <span class="en">The app does <strong>not</strong> request permission for <strong>location (GPS), camera, microphone, contacts or photos</strong>. Areas are chosen from lists (division → district → upazila).</span></li>
+        <li><span class="bn">অ্যাপের অনুমতি শুধু ইন্টারনেট, নেটওয়ার্ক অবস্থা দেখা এবং Google বিজ্ঞাপন আইডি (বিজ্ঞাপনের জন্য)।</span>
+            <span class="en">The only permissions are internet access, network state, and the Google advertising ID (for ads).</span></li>
+      </ul>
+    </section>
+
+    <!-- 3 -->
+    <section class="card reveal" id="s3">
+      <span class="num">০৩</span>
+      <h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h9"/></svg></span>
+        <span class="bn">তথ্য ব্যবহারের উদ্দেশ্য</span><span class="en">How we use your information</span></h2>
+      <div class="bn"><ul>
+        <li>অ্যাকাউন্ট তৈরি, লগইন, পাসওয়ার্ড রিসেট এবং অ্যাকাউন্ট মুছে ফেলার সুবিধা দেওয়া।</li>
+        <li>আপনার মৌজা ম্যাপের আবেদন গ্রহণ, প্রশাসনিক পর্যালোচনা এবং ফলাফল (অনুমোদন/প্রত্যাখ্যান/বাতিল) জানানো।</li>
+        <li>অনুমোদিত ম্যাপ PDF-এ সুরক্ষিত ও সময়সীমাযুক্ত অ্যাক্সেস প্রদান।</li>
+        <li>পছন্দের তালিকা, অফলাইন ম্যাপ ও সেটিংস সংরক্ষণ।</li>
+        <li>আবেদনের কার্যক্রমের অডিট রেকর্ড রাখা এবং অপব্যবহার প্রতিরোধ করা।</li>
+        <li>বিজ্ঞাপন প্রদর্শনের মাধ্যমে অ্যাপটি বিনামূল্যে চালু রাখা।</li>
+      </ul></div>
+      <div class="en"><ul>
+        <li>Providing account creation, sign-in, password reset and account deletion.</li>
+        <li>Receiving your mouza map applications, reviewing them, and telling you the outcome (approved / rejected / cancelled).</li>
+        <li>Granting secure, time-limited access to approved map PDFs.</li>
+        <li>Saving your favourites, offline maps and settings.</li>
+        <li>Keeping an audit record of application activity and preventing misuse.</li>
+        <li>Showing ads so the app can stay free.</li>
+      </ul></div>
+    </section>
+
+    <!-- 4 -->
+    <section class="card reveal" id="s4">
+      <span class="num">০৪</span>
+      <h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 00-5.7 0l-3 3a4 4 0 005.7 5.7l1-1"/></svg></span>
+        <span class="bn">তৃতীয় পক্ষের সেবা</span><span class="en">Third-party services</span></h2>
+      <p><span class="bn">অ্যাপটি নিচের সেবাগুলো ব্যবহার করে। এদের নিজস্ব গোপনীয়তা নীতিমালা প্রযোজ্য:</span>
+         <span class="en">The app relies on the services below. Each has its own privacy policy:</span></p>
+      <div class="tbl"><table>
+        <thead><tr>
+          <th><span class="bn">সেবা</span><span class="en">Service</span></th>
+          <th><span class="bn">কীসের জন্য</span><span class="en">Used for</span></th>
+          <th><span class="bn">গোপনীয়তা নীতি</span><span class="en">Privacy policy</span></th>
+        </tr></thead>
+        <tbody>
+          <tr><td>Firebase Authentication (Google)</td>
+              <td><span class="bn">অ্যাকাউন্ট ও লগইন</span><span class="en">Accounts and sign-in</span></td>
+              <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td></tr>
+          <tr><td>Google Sign-In</td>
+              <td><span class="bn">Google অ্যাকাউন্ট দিয়ে লগইন</span><span class="en">Signing in with a Google account</span></td>
+              <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
+          <tr><td>Supabase</td>
+              <td><span class="bn">ডেটাবেজ, আবেদন, ম্যাপ ফাইল স্টোরেজ</span><span class="en">Database, applications, map file storage</span></td>
+              <td><a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></td></tr>
+          <tr><td>Google AdMob &amp; User Messaging Platform</td>
+              <td><span class="bn">বিজ্ঞাপন ও বিজ্ঞাপন-সম্মতি ফর্ম</span><span class="en">Advertising and the ad-consent form</span></td>
+              <td><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a></td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <!-- 5 -->
+    <section class="card reveal" id="s5">
+      <span class="num">০৫</span>
+      <h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="3"/><path d="M7 9h6M7 13h10M8 21h8"/></svg></span>
+        <span class="bn">বিজ্ঞাপন ও সম্মতি</span><span class="en">Advertising &amp; consent</span></h2>
+      <div class="bn">
+        <p>অ্যাপটি <strong>Google AdMob</strong> ব্যবহার করে ব্যানার, নেটিভ, ইন্টারস্টিশিয়াল, রিওয়ার্ডেড ও অ্যাপ-ওপেন বিজ্ঞাপন দেখাতে পারে। বিজ্ঞাপন দেখাতে Google আপনার ডিভাইসের বিজ্ঞাপন আইডি ও ডিভাইস/ব্যবহার সংক্রান্ত তথ্য সংগ্রহ ও ব্যবহার করতে পারে।</p>
+        <ul>
+          <li>প্রযোজ্য অঞ্চলে Google-এর <strong>User Messaging Platform (UMP)</strong> সম্মতি ফর্ম দেখানো হয়। আপনার সম্মতি ছাড়া বিজ্ঞাপন অনুরোধ করা হয় না।</li>
+          <li>সম্মতির পছন্দ বদলাতে: <strong>সেটিংস → বিজ্ঞাপন ও গোপনীয়তা</strong>।</li>
+          <li>আমরা বিজ্ঞাপনের জন্য আপনার নাম, ফোন, ইমেইল বা অ্যাকাউন্ট আইডি Google-কে পাঠাই না।</li>
+          <li>অ্যাপের অনবোর্ডিং, লগইন/সাইন-আপ, অ্যাডমিন, ম্যাপ ও PDF ভিউয়ার স্ক্রিনে বিজ্ঞাপন দেখানো হয় না।</li>
+          <li>রিওয়ার্ডেড ভিডিও সম্পূর্ণ ঐচ্ছিক — যেমন অতিরিক্ত অফলাইন স্লট বা ২৪ ঘণ্টার বিজ্ঞাপন-মুক্ত পাস।</li>
+          <li>ডিভাইসের সেটিংস থেকে আপনি বিজ্ঞাপন আইডি রিসেট বা ব্যক্তিগতকৃত বিজ্ঞাপন সীমিত করতে পারেন।</li>
+        </ul>
+      </div>
+      <div class="en">
+        <p>The app may show banner, native, interstitial, rewarded and app-open ads using <strong>Google AdMob</strong>. To serve ads, Google may collect and use your device’s advertising ID and device/usage information.</p>
+        <ul>
+          <li>Where required, Google’s <strong>User Messaging Platform (UMP)</strong> consent form is shown. Ads are not requested without the consent required in your region.</li>
+          <li>You can change your choice anytime in <strong>Settings → Ads &amp; Privacy</strong>.</li>
+          <li>We do not send your name, phone, email or account IDs to Google for advertising.</li>
+          <li>Ads are not shown on onboarding, sign-in/sign-up, admin, or the map and PDF viewer screens.</li>
+          <li>Rewarded videos are entirely optional — e.g. for an extra offline slot or a 24-hour ad-free pass.</li>
+          <li>In your device settings you can reset your advertising ID or limit ad personalisation.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 6 -->
+    <section class="card reveal" id="s6">
+      <span class="num">০৬</span>
+      <h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 10.7l6.8-4.4M8.6 13.3l6.8 4.4"/></svg></span>
+        <span class="bn">তথ্য শেয়ারিং</span><span class="en">How information is shared</span></h2>
+      <div class="bn">
+        <p>আমরা আপনার ব্যক্তিগত তথ্য <strong>বিক্রি করি না</strong>। তথ্য শুধু নিচের ক্ষেত্রে প্রকাশ বা প্রক্রিয়া হতে পারে:</p>
+        <ul>
+          <li><strong>অ্যাপের অ্যাডমিন:</strong> আবেদন যাচাইয়ের জন্য আপনার আবেদনের তথ্য অ্যাডমিন পর্যালোচকরা দেখতে পারেন।</li>
+          <li><strong>সেবা প্রদানকারী:</strong> ধারা ৪-এ উল্লিখিত Firebase, Supabase ও Google আমাদের পক্ষে তথ্য প্রক্রিয়া করে।</li>
+          <li><strong>আইনি প্রয়োজনে:</strong> প্রযোজ্য আইন, আদালতের আদেশ বা বৈধ সরকারি অনুরোধ মেনে চলতে।</li>
+          <li><strong>আপনার নির্দেশে:</strong> আপনি অ্যাপ থেকে কোনো মৌজা ম্যাপের লিংক শেয়ার করলে শুধু সেই লিংক ও মৌজার নাম/এলাকা শেয়ার হয়।</li>
+        </ul>
+      </div>
+      <div class="en">
+        <p>We <strong>do not sell</strong> your personal information. It may be disclosed or processed only in these cases:</p>
+        <ul>
+          <li><strong>App administrators:</strong> admin reviewers can see your application details in order to process them.</li>
+          <li><strong>Service providers:</strong> Firebase, Supabase and Google (Section 4) process data on our behalf.</li>
+          <li><strong>Legal reasons:</strong> to comply with applicable law, court orders or valid government requests.</li>
+          <li><strong>At your direction:</strong> if you share a mouza map link from the app, only that link and the mouza name/area are shared.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 7 -->
+    <section class="card reveal" id="s7">
+      <span class="num">০৭</span>
+      <h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.2 8.2-8 9-4.8-.8-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+        <span class="bn">তথ্য নিরাপত্তা</span><span class="en">Data security</span></h2>
+      <div class="bn"><ul>
+        <li>লগইন Firebase Authentication দিয়ে পরিচালিত হয়; ডিভাইসের লগইন সেশন এনক্রিপ্টেড অবস্থায় রাখা হয়।</li>
+        <li>অ্যাপ ও সার্ভারের মধ্যে তথ্য আদান-প্রদান সংযুক্ত সেবাগুলোর এনক্রিপ্টেড সংযোগের মাধ্যমে হয়।</li>
+        <li>ডেটাবেজে Row Level Security ব্যবহার করে ব্যবহারকারী ও অ্যাডমিনের অ্যাক্সেস সার্ভার-পক্ষে নিয়ন্ত্রণ করা হয়।</li>
+        <li>ম্যাপ PDF একটি প্রাইভেট স্টোরেজে থাকে; অনুমোদিত হলে স্বল্পমেয়াদি অ্যাক্সেস টোকেনের মাধ্যমে দেওয়া হয়।</li>
+      </ul></div>
+      <div class="en"><ul>
+        <li>Sign-in is handled by Firebase Authentication; your sign-in session is stored on the device in encrypted form.</li>
+        <li>Data between the app and our services travels over their encrypted connections.</li>
+        <li>The database uses Row Level Security so user and admin access is enforced on the server.</li>
+        <li>Map PDFs sit in private storage and are only released through short-lived access tokens once approved.</li>
+      </ul></div>
+      <div class="callout warn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9L2.4 18a2 2 0 001.7 3h15.8a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z"/></svg>
+        <p><span class="bn">কোনো ব্যবস্থাই ১০০% নিরাপদ নয়। আমরা যুক্তিসংগত সুরক্ষা ব্যবস্থা নিই, তবে সম্পূর্ণ নিরাপত্তার নিশ্চয়তা দিতে পারি না। আপনার পাসওয়ার্ড গোপন রাখুন।</span>
+           <span class="en">No system is 100% secure. We take reasonable precautions but cannot guarantee absolute security. Please keep your password private.</span></p>
+      </div>
+    </section>
+
+    <!-- 8 -->
+    <section class="card reveal" id="s8">
+      <span class="num">০৮</span>
+      <h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14M10 10v6M14 10v6"/></svg></span>
+        <span class="bn">তথ্য সংরক্ষণ ও অ্যাকাউন্ট মুছে ফেলা</span><span class="en">Retention &amp; account deletion</span></h2>
+      <div class="bn">
+        <p>আপনার তথ্য আমরা ততদিন রাখি যতদিন আপনার অ্যাকাউন্ট সক্রিয় থাকে বা সেবা প্রদানের জন্য প্রয়োজন হয়।</p>
+        <h3>অ্যাকাউন্ট মুছে ফেলার উপায়</h3>
+        <ul>
+          <li><strong>অ্যাপ থেকে:</strong> সেটিংস → অ্যাকাউন্ট ও পরিচিতি → “অ্যাকাউন্ট স্থায়ীভাবে মুছে ফেলুন”।</li>
+          <li><strong>অ্যাপ ছাড়া:</strong> নিচের বাটনের পাতা থেকে অনুরোধ পাঠান।</li>
+        </ul>
+        <h3>কী মুছে যায়</h3>
+        <ul>
+          <li>Firebase Authentication অ্যাকাউন্ট ও লগইন তথ্য।</li>
+          <li>Supabase-এ থাকা আপনার প্রোফাইল (নাম, ফোন, ইমেইল) ও পছন্দের তালিকা।</li>
+          <li>ডিভাইসে থাকা সেশন ডেটা।</li>
+        </ul>
+        <p>আইনি ও নিরীক্ষার প্রয়োজনে আবেদনের প্রশাসনিক লেনদেন রেকর্ড প্রযোজ্য আইন অনুযায়ী নির্দিষ্ট মেয়াদের জন্য নামহীন (anonymized) অবস্থায় সংরক্ষিত থাকতে পারে। অ্যাপ আনইনস্টল করলে ডিভাইসে সংরক্ষিত অফলাইন ম্যাপ ও স্থানীয় ডেটা মুছে যায়।</p>
+      </div>
+      <div class="en">
+        <p>We keep your information for as long as your account is active or as needed to provide the service.</p>
+        <h3>How to delete your account</h3>
+        <ul>
+          <li><strong>In the app:</strong> Settings → Account &amp; Identity → “Permanently delete account”.</li>
+          <li><strong>Without the app:</strong> send a request from the page linked below.</li>
+        </ul>
+        <h3>What is deleted</h3>
+        <ul>
+          <li>Your Firebase Authentication account and sign-in details.</li>
+          <li>Your profile (name, phone, email) and favourites stored in Supabase.</li>
+          <li>Session data on your device.</li>
+        </ul>
+        <p>For legal and audit reasons, administrative records of applications may be kept in anonymised form for a period required by applicable law. Uninstalling the app removes offline maps and other local data from your device.</p>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="delete-account.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/></svg>
+          <span class="bn">অ্যাকাউন্ট মুছে ফেলার পাতা</span><span class="en">Account deletion page</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 9 -->
+    <section class="card reveal" id="s9">
+      <span class="num">০৯</span>
+      <h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg></span>
+        <span class="bn">আপনার অধিকার ও পছন্দ</span><span class="en">Your rights &amp; choices</span></h2>
+      <div class="bn"><ul>
+        <li><strong>দেখা ও সংশোধন:</strong> আপনার প্রোফাইল ও আবেদনের তথ্য সম্পর্কে জানতে বা ভুল সংশোধন করতে আমাদের ইমেইল করুন।</li>
+        <li><strong>মুছে ফেলা:</strong> ধারা ৮ অনুযায়ী যেকোনো সময় অ্যাকাউন্ট মুছুন।</li>
+        <li><strong>বিজ্ঞাপন:</strong> সেটিংস → বিজ্ঞাপন ও গোপনীয়তা থেকে সম্মতি পরিবর্তন করুন।</li>
+        <li><strong>পাসওয়ার্ড:</strong> লগইন পাতার “পাসওয়ার্ড ভুলে গেছেন” দিয়ে রিসেট করুন।</li>
+        <li><strong>অফলাইন ডেটা:</strong> অ্যাপের স্টোরেজ ম্যানেজার থেকে ডাউনলোড করা ম্যাপ মুছুন।</li>
+      </ul></div>
+      <div class="en"><ul>
+        <li><strong>Access &amp; correction:</strong> email us to ask about your profile and application data or to fix mistakes.</li>
+        <li><strong>Deletion:</strong> delete your account anytime as described in Section 8.</li>
+        <li><strong>Ads:</strong> change your consent in Settings → Ads &amp; Privacy.</li>
+        <li><strong>Password:</strong> reset it with “Forgot password” on the sign-in screen.</li>
+        <li><strong>Offline data:</strong> remove downloaded maps from the app’s storage manager.</li>
+      </ul></div>
+    </section>
+
+    <!-- 10 -->
+    <section class="card reveal" id="s10">
+      <span class="num">১০</span>
+      <h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6M17 5a3.5 3.5 0 010 6.5M21.5 20c0-2.7-1.6-4.6-4-5.5"/></svg></span>
+        <span class="bn">শিশুদের গোপনীয়তা</span><span class="en">Children’s privacy</span></h2>
+      <div class="bn"><p>অ্যাপটি সাধারণ প্রাপ্তবয়স্ক ব্যবহারকারীদের জন্য তৈরি এবং শিশুদের লক্ষ্য করে নয়। আমরা জেনেশুনে ১৩ বছরের কম বয়সী শিশুর ব্যক্তিগত তথ্য সংগ্রহ করি না। এমন তথ্য সংগ্রহ হয়েছে বলে জানতে পারলে আমরা তা দ্রুত মুছে ফেলব। অভিভাবক এ বিষয়ে জানাতে চাইলে নিচের ঠিকানায় যোগাযোগ করুন।</p></div>
+      <div class="en"><p>The app is intended for a general adult audience and is not directed at children. We do not knowingly collect personal information from children under 13. If we learn that we have, we will delete it promptly. Parents or guardians who believe this has happened can contact us at the address below.</p></div>
+    </section>
+
+    <!-- 11 -->
+    <section class="card reveal" id="s11">
+      <span class="num">১১</span>
+      <h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 11-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></span>
+        <span class="bn">নীতিমালা পরিবর্তন</span><span class="en">Changes to this policy</span></h2>
+      <div class="bn"><p>আমরা সময়ে সময়ে এই নীতিমালা হালনাগাদ করতে পারি। পরিবর্তন হলে এই পাতায় নতুন তারিখসহ প্রকাশ করা হবে। নিয়মিত এই পাতা দেখার অনুরোধ রইল। পরিবর্তনের পরে অ্যাপ ব্যবহার চালিয়ে গেলে আপনি হালনাগাদ নীতিমালা মেনে নিচ্ছেন বলে গণ্য হবে।</p></div>
+      <div class="en"><p>We may update this policy from time to time. Changes will be posted on this page with a new date. Please review it periodically. Continuing to use the app after a change means you accept the updated policy.</p></div>
+    </section>
+
+    <!-- 12 -->
+    <section class="card reveal" id="s12">
+      <span class="num">১২</span>
+      <h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 8l9 6 9-6"/></svg></span>
+        <span class="bn">যোগাযোগ</span><span class="en">Contact us</span></h2>
+      <p><span class="bn">এই নীতিমালা, আপনার তথ্য বা অ্যাকাউন্ট সংক্রান্ত যেকোনো প্রশ্নে যোগাযোগ করুন:</span>
+         <span class="en">For any question about this policy, your data or your account:</span></p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:sayeedabraraqil@gmail.com?subject=Mouza%20Map%20Privacy">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 8l9 6 9-6"/></svg>
+          sayeedabraraqil@gmail.com
+        </a>
+        <a class="btn ghost" href="delete-account.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/></svg>
+          <span class="bn">অ্যাকাউন্ট মুছুন</span><span class="en">Delete account</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  <div class="fl">
+    <a href="#s1"><span class="bn">উপরে যান</span><span class="en">Back to top</span></a>
+    <a href="delete-account.html"><span class="bn">অ্যাকাউন্ট মুছে ফেলা</span><span class="en">Account deletion</span></a>
+    <a href="mailto:sayeedabraraqil@gmail.com">Contact</a>
+  </div>
+  <div>© 2026 মৌজা ম্যাপ বাংলাদেশ · Mouza Map Bangladesh</div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement, btns=document.querySelectorAll('.lang button');
+  function setLang(l){
+    root.setAttribute('lang',l);
+    for(var i=0;i<btns.length;i++){btns[i].setAttribute('aria-pressed',btns[i].getAttribute('data-set')===l?'true':'false');}
+    document.title = l==='bn' ? 'গোপনীয়তা নীতিমালা | মৌজা ম্যাপ বাংলাদেশ' : 'Privacy Policy | Mouza Map Bangladesh';
+    try{localStorage.setItem('mm-lang',l);}catch(e){}
+  }
+  var initial='bn';
+  try{
+    var q=new URLSearchParams(location.search).get('lang');
+    var s=localStorage.getItem('mm-lang');
+    if(q==='en'||q==='bn'){initial=q;}
+    else if(s==='en'||s==='bn'){initial=s;}
+  }catch(e){}
+  setLang(initial);
+  for(var i=0;i<btns.length;i++){btns[i].addEventListener('click',function(){setLang(this.getAttribute('data-set'));});}
+
+  var cards=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.08});
+    cards.forEach(function(c){io.observe(c);});
+  }else{cards.forEach(function(c){c.classList.add('in');});}
+
+  var links=[].slice.call(document.querySelectorAll('nav.toc a'));
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+  function spy(){
+    var y=window.scrollY+140,cur=0;
+    secs.forEach(function(s,i){if(s&&s.offsetTop<=y)cur=i;});
+    links.forEach(function(a,i){a.classList.toggle('active',i===cur);});
+    var act=links[cur];
+    if(act && getComputedStyle(act.parentNode).display==='flex'){act.scrollIntoView({block:'nearest',inline:'center'});}
+  }
+  window.addEventListener('scroll',spy,{passive:true});spy();
+})();
+</script>
+</body>
+</html>
